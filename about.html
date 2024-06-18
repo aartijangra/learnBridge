@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <title>EDUFORD UNIVERSITY WEBSITE</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="learn edge.logo.png" alt=""></a>
+            <div class="nav-links id=" navLinks">
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- aboust us content -->
+    <section class="about-us">
+        <div class="aboutusrow">
+            <div class="about-col">
+                <h1>ADMISSIONS</h1>
+                <span>At Learn Bridge by NY, we recognize the challenges students face when navigating the complex landscape of college admissions. Our mission is to provide comprehensive support to make this journey as smooth and stress-free as possible. From assisting with application preparation to guiding you through the acceptance process, our team of expert consultants is dedicated to ensuring your success. By choosing Learn Bridge by NY, you gain access to personalized assistance, valuable insights, and the resources you need to present the best version of yourself to colleges and universities. Let us help you turn your academic dreams into reality.</span>
+                <a href="course.html" class="hero-btn ">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="consultance.webp" alt="">
+            </div>
+        </div>
+        <div>
+            <h1>WHAT WE OFFER</h1>
+            <p>
+                <ul>
+                    <li><strong>Personalized Consultation:</strong>Our expert consultants provide personalized guidance tailored to each student's unique strengths, interests, and goals.</li>
+                    <li><strong>Comprehensive Support:</strong> From selecting the right colleges to crafting standout applications and preparing for interviews, we offer comprehensive support at every stage of the admissions process.</li>
+                    <li><strong>Application Assistance:</strong> We assist students in preparing and submitting college applications, ensuring that they meet all requirements and deadlines.</li>
+                    <li><strong>Essay Review and Editing:</strong> Our team provides feedback and editing services to help students craft compelling personal statements and essays that highlight their achievements and aspirations.</li>
+                    <li><strong>Interview Preparation:</strong> We offer interview coaching and preparation sessions to help students confidently showcase their skills and experiences to admissions committees.</li>
+                </ul>
+            </p>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Learn Bridge. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+            direction: "vertical",
+            gestureDirection: "vertical",
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
+    </script>
+</body>
+
+</html>
