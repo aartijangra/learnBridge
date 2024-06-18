@@ -1172,10 +1172,88 @@ body, html {
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-    /* margin-left: 200px; */
+   
+    
+}
+
+.services-btn a{
+    text-decoration: none;
+    color: black;
 }
 
 .services-btn:hover {
     background: linear-gradient(135deg, #64bd68, #26492c);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.courses h1{
+    font-size: 50px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    width: 500px;
+    margin-top: 100px;
+    
+}
+
+.adm{
+    margin: auto;
+    padding: 120px 0;
+}
+
+.adm h1{
+    font-size: 50px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    width: max-content;
+    margin-top: 10px;
+}
+
+.coursesec{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+    gap: 200px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.coursevdo video {
+    width: 100%;
+    height: auto;
+    /* margin-top: 100px; */
+    height: 390px;
+    width: 700px;
+    object-fit: cover;
+    auto-play: true;
+    loop: true;
+    muted: true;
+    controls: false;
+    border-radius: 10px;
+}
+
+.coursee{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.course-list{
+    font-size: 18px;
 }
