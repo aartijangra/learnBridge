@@ -1383,5 +1383,21 @@ body, html {
     .world-map{
         height: 500px;
     }
+
+    .servicerow .img1{
+        width: 70vw;
+        height: 200px;
+        
+    }
+    .servicerow .img2{
+        width: 70vw;
+        height: 200px;
+        
+    }
+    .servicerow .img3{
+        width: 70vw;
+        height: 200px;
+        
+    }
     
 }
