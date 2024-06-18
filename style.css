@@ -993,6 +993,7 @@ h3 {
 
 .get{
   color: black;
+  font-size: 50px;
 }
 
 .section-title {
@@ -1177,6 +1178,14 @@ body, html {
 }
 
 .services-btn a{
+    text-decoration: none;
+    color: black;
+}
+.hero-btn a{
+    text-decoration: none;
+    color: black;
+}
+.abroad-btn a{
     text-decoration: none;
     color: black;
 }

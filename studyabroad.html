@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <title>LEARN BRIDGE BY NV</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="learn edge.logo.png" alt=""></a>
+            <div class="nav-links id=" navLinks">
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- aboust us content -->
+    <section class="about-us">
+        <div class="aboutusrow">
+            <div class="about-col">
+                <h1>STUDY ABROAD</h1>
+                <span>Embarking on a study abroad journey is a life-changing experience, but it can also be daunting without the right guidance. At Learn Bridge by NY, we specialize in providing tailored support to help you explore global education opportunities with confidence. Our experienced consultants will work with you to understand your goals and preferences, guiding you through every step of the process, from selecting the right program to handling visa applications. With our extensive network of international partners and in-depth knowledge of study abroad procedures, we're here to make your dream of studying abroad a reality. Join Learn Bridge by NY and embark on a transformative educational adventure today.
+                </span>
+                
+            </div>
+            <div class="about-col">
+                <img src="study-abroad-new.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h1>WHAT WE OFFER</h1>
+            <p>
+                <ul>
+                    <li><strong>Personalized Consultation:</strong>Our experienced consultants provide personalized guidance tailored to each student's academic interests, career goals, and cultural preferences.</li>
+                    <li><strong>Program Research and Selection:
+                        </strong> We help students research and select study abroad programs that align with their academic and personal objectives, considering factors such as location, language, duration, and curriculum.</li>
+                    <li><strong>Application Assistance:</strong>We assist students in completing study abroad applications, ensuring they meet all requirements and deadlines, and provide guidance on writing personal statements and essays.</li>
+                    <li><strong>Visa and Travel Support:</strong> Our team offers guidance and support throughout the visa application process, including document preparation and interview preparation, as well as travel logistics such as flights and accommodation.</li>
+                    <li><strong>Pre-Departure Orientation:
+                    </strong> We provide pre-departure orientation sessions to help students prepare for their study abroad experience, covering topics such as cultural adaptation, academic expectations, and safety abroad.
+                    </li>
+                </ul>
+            </p>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Learn Bridge. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+            direction: "vertical",
+            gestureDirection: "vertical",
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
+    </script>
+</body>
+
+</html>
