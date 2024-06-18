@@ -1355,7 +1355,7 @@ body, html {
     .hero-text h1{
         margin-left: 40%;
         width: max-content;
-        font-size: 36px;
+        font-size: 34px;
         margin-top: 5%;
         
     }
@@ -1373,5 +1373,15 @@ body, html {
         margin-top: 5%;
     }
 
+    .world-map img{
+        width: 100vw;
+        height: 210px;
+        margin-top: 22%;
+        margin-bottom: 0%;
+    }
+
+    .world-map{
+        height: 500px;
+    }
     
 }
