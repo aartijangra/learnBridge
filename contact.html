@@ -35,46 +35,6 @@
         
     </section>
 
-    <!-- form -->
-    
-            <section id="contact">
-                <div class="formcontainer">
-                    <div class="section-title wow fadeInUp" data-wow-delay="0.3s">
-                        <h1 class="get">Get in Touch</h1>
-                        <p>If you have any query or for collaboration</p>
-                    </div>
-                    <div class="contact-form wow fadeInUp" data-wow-delay="1.0s">
-                        <form id="contact-form" action="http://127.0.0.1:5500/send-email" method="POST" onsubmit="sendEmail(); reset(); return false;">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 rad">
-                                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 col-sm-6 rad">
-                                    <input name="email" type="email" id="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-12 msg rad">
-                                    <textarea name="message" class="form-control" id="msg" placeholder="Message" rows="6" required></textarea>
-                                </div>
-                                <!-- <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-                                    <input name="submit" type="submit" class="form-control submit" id="submit" value="SEND MESSAGE">
-                                </div> -->
-                                <div>
-                                  <button class="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        
-    
-        
-    
-        <script>
-            function sendEmail() {
-                alert('Email sent successfully!');
-            }
-        </script>
     
     
 
@@ -107,31 +67,59 @@
                 </span>
             </div>
 
-            <div class="contact-col">
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                    <textarea rows="8" name="message" placeholder="message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
-                </form>
-            </div>
+    </section>
 
+    <!-- form -->
+    <section>
+        <div class="formbody">
+            <main>
+                <section id="contact">
+                    <div class="formcontainer">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.3s">
+                            <h1 class="get">Get in Touch</h1>
+                            <span>If you have any query or for collaboration</span>
+                        </div>
+                        <div class="contact-form wow fadeInUp" data-wow-delay="1.0s">
+                            <form id="contact-form" action="http://127.0.0.1:5500/send-email" method="POST" onsubmit="sendEmail(); reset(); return false;">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 rad">
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 rad">
+                                        <input name="email" type="email" id="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12 msg rad">
+                                        <textarea name="message" class="form-control" id="msg" placeholder="Message" rows="6" required></textarea>
+                                    </div>
+                                    <!-- <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                                        <input name="submit" type="submit" class="form-control submit" id="submit" value="SEND MESSAGE">
+                                    </div> -->
+                                    <div>
+                                      <button class="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        
+            
+        
+            <script>
+                function sendEmail() {
+                    alert('Email sent successfully!');
+                }
+            </script>
+        </div>
+    
     </section>
 
     <!-- Footer -->
     <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
-            diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
-        <div class="icons">
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
+        <div class="footer-bottom">
+            <p>&copy; 2024 Learn Bridge. All Rights Reserved.</p>
         </div>
-        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
-        </p>
     </section>
 
     <!-- javascript for toggle menu -->
