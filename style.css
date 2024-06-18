@@ -490,13 +490,29 @@ h3 {
     height: 100vh;
     text-align: center;
     z-index: 0;
+
     
 
 }
 .world-map img{
     margin-top: 5%;
+    position: absolute;
+    -webkit-animation: linear infinite 20s;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 20s;
 }
+@-webkit-keyframes run{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 
+}
 
 
 
@@ -678,6 +694,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 200px;
 }
 
 .location iframe {
@@ -1046,3 +1063,119 @@ body, html {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
+
+
+
+  /* services */
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.services h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.services-col {
+    flex: 1 1 300px;
+    background-color: transparent;
+    margin: 30px;
+    height: 300px;
+    perspective: 1000px;
+    
+}
+
+.servicerow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    gap: 40px;
+
+
+}
+
+.servicerow img{
+    width: 600px;
+    height: 500px;
+    border-radius: 10%;
+    object-fit: cover;
+    
+}
+
+.img1, .img2 {
+    /* position: absolute; Ensures the images are positioned absolutely */
+}
+
+.img1 , .img3 {
+    -webkit-animation: runLeftToMiddle 10s linear;
+    animation: runLeftToMiddle 10s linear;
+}
+
+.img2 {
+    -webkit-animation: runRightToMiddle 10s linear;
+    animation: runRightToMiddle 10s linear;
+}
+
+@-webkit-keyframes runLeftToMiddle {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes runLeftToMiddle {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes runRightToMiddle {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes runRightToMiddle {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+.services-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #26492c, #64bd68);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* margin-left: 200px; */
+}
+
+.services-btn:hover {
+    background: linear-gradient(135deg, #64bd68, #26492c);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
