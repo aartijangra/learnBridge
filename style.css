@@ -1233,6 +1233,18 @@ body, html {
     margin-bottom: 20px;
 
 }
+.coursesecrev{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+    gap: 200px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
 
 .coursevdo video {
     width: 100%;
@@ -1247,6 +1259,7 @@ body, html {
     controls: false;
     border-radius: 10px;
 }
+
 
 .coursee{
     display: flex;
@@ -1398,6 +1411,45 @@ body, html {
         width: 70vw;
         height: 200px;
         
+    }
+
+    .adm h1{
+        margin-left: 1%;
+        width: max-content;
+        font-size: 28px;
+        /* margin-top: 3%; */
+        font-weight: 900;
+
+
+    }
+    .coursesec{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    
+    }
+    .coursesecrev{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    
+    }
+    .coursevdo video{
+        width: fit-content;
+        height: 210px;
+    }
+    .coursevdo{
+        height: 230px;
     }
     
 }
