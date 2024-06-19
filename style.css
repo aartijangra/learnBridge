@@ -1451,5 +1451,83 @@ body, html {
     .coursevdo{
         height: 230px;
     }
+    .about-us{
+        margin-left: 0%;
+    }
+
+    .aboutusrow{
+        display: flex;
+        width: 180px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        gap: 0px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .about-col{
+        margin-top: 0%;
+        padding-top: 0px;
+    }
+    .about-col img{
+        width: fit-content;
+        margin-left: 5%;
+        height: 120px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-col h1{
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-col span{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48vw;
+        margin-left: 5%;
+        padding: 40px;
+        padding-top: 5px;
+    }
+
+    .about-col a{
+        margin-left: 20%;
+        padding: 20px;
+        /* padding-top: 5px; */
+        width: 35vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whatweoffer{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 48vw;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .whatweoffer h1{
+        font-size: 23px;
+        width: max-content;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-self: unset; */
+        justify-content: center;
+        width: 55vw;
+    }
     
 }
