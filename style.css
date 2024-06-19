@@ -1524,6 +1524,17 @@ body, html {
         font-size: 45px;
         width: max-content;
     }
+    .aboutusrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        gap: 0px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
     
     
 }
