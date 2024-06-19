@@ -1521,13 +1521,6 @@ body, html {
         font-size: 23px;
         width: max-content;
     }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-self: unset; */
-        justify-content: center;
-        width: 55vw;
-    }
+    
     
 }
