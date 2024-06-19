@@ -1457,7 +1457,7 @@ body, html {
 
     .aboutusrow{
         display: flex;
-        width: 180px;
+        width: 90vw;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -1473,15 +1473,17 @@ body, html {
     }
     .about-col img{
         width: fit-content;
-        margin-left: 5%;
-        height: 120px;
+        /* margin-left: 5%; */
+        height: 210px;
         border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .about-col h1{
-        font-size: 24px;
+        font-size: 55px;
+        margin-left: 10%;
+        width: max-content;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1491,8 +1493,8 @@ body, html {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 48vw;
-        margin-left: 5%;
+        width: 370px;
+        /* margin-left: 5%; */
         padding: 40px;
         padding-top: 5px;
     }
@@ -1501,7 +1503,8 @@ body, html {
         margin-left: 20%;
         padding: 20px;
         /* padding-top: 5px; */
-        width: 35vw;
+        width: 40vw;
+        margin-left: 25%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1510,15 +1513,15 @@ body, html {
         display: flex;
         flex-direction: column;
         gap: 0px;
-        width: 48vw;
+        width: 90vw;
         margin-top: 5%;
         margin-bottom: 10%;
-        margin-left: 20px;
+        margin-left: 10%;
         margin-right: 20px;
         margin-bottom: 20px;
     }
     .whatweoffer h1{
-        font-size: 23px;
+        font-size: 45px;
         width: max-content;
     }
     
