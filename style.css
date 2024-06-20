@@ -1627,4 +1627,16 @@ body, html {
     .hidemenu{
         display: flex;
     }
+
+    .sub-header img{
+        width: 150px;
+        /* margin-top: 100px; */
+        left: 0;
+    
+    }
+    .header img{
+        width: 150px;
+        /* margin-top: 100px; */
+        left: 0;
+    }
 }
