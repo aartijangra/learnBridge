@@ -1565,7 +1565,15 @@ body, html {
         display: none;
     }
 
-    
+    .hamburger{
+        display: flex;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+        height: 100px;
+        width: 100px;
+    }
     
 }
  
@@ -1590,14 +1598,14 @@ body, html {
     width: 100%;
 }
 .hamburger{
-    display: block;
-    position: fixed;
+    display: flex;
+    /* position: fixed; */
     right: 50px;
     top: 20px;
     z-index: 1000;
     height: 30px;
     width: 30px;
-    margin-right: 200px;
+    margin-right: 20px;
 }
 .cross{
     display: none;
@@ -1611,3 +1619,12 @@ body, html {
    
 }
 
+.hidemenu{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .hidemenu{
+        display: flex;
+    }
+}
