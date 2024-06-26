@@ -1240,12 +1240,18 @@ body, html {
     muted: true;
     controls: false;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 265px;
 }
 
 
 .coursee{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* margin-top: 5%; */
     margin-bottom: 10%;
     margin-left: 20px;
@@ -1259,7 +1265,12 @@ body, html {
     font-size: 40px;
 }
 .course-list{
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: lighter;
+    
+}
+.course-list li{
+    left: 0px;
 }
 
 /* @media(max-width:700px) {
@@ -1333,6 +1344,13 @@ body, html {
         /* padding: 0; */
         box-sizing: border-box;
         max-width: 100vw;
+    }
+    .contact img{
+        height: 50px;
+        width: 50px;
+        display: block;
+        padding: 0px;
+
     }
     .hero {
         flex-direction: column-reverse;
@@ -1435,6 +1453,7 @@ body, html {
     .coursevdo video{
         width: fit-content;
         height: 210px;
+        margin-left: 0%;
     }
     .coursevdo{
         height: 230px;
@@ -1566,6 +1585,7 @@ body, html {
     nav{
         height: 80px;
         z-index: 1000;
+        width: 600px;
     
     }
     
@@ -1778,8 +1798,9 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 105px;
+        padding-left: 0px;
         margin-bottom: 0px;
+        margin-left: 109px;
     
     }
     .contact p{
