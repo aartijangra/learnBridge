@@ -45,11 +45,11 @@
         <section class="hero">
             <div class="hero-text">
                 <h1>LEARN BRIDGE BY NV</h1>
-                <p>"Unlock Your Future with LearnBridge by NV
-                    Expert Guidance for College Admissions, Credit Transfers, and Abroad Education
-                    Transform Your Education Journey with Our Personalized Support
-                    Explore Global Opportunities and Achieve Your Academic and Career Goals
-                    Let Us Help You Bridge the Gap to Success. With a vision to bridge the gap to your future, Our experts provide top-notch education consulting services, including expert guidance on our various services. By joining us, you'll receive personalized, reliable, and comprehensive support to navigate the complexities of higher education."</p>
+                <p>"Unlock your future with LearnBridge by NV
+                    Expert guidance for college admissions, engineering credit transfers, and abroad education.
+                    Transform your education journey with our personalized support.
+                    Explore global opportunities and achieve your academic and career goals.
+                    Let us help you bridge the gap to success. Our experts provide top-notch education consulting services, including guidance throughout your admission journey. By joining us, you'll receive personalized, reliable, and comprehensive support to navigate the complexities of higher education."</p>
                     <div>
                         <button class="hero-btn"> <a href="services.html">Get started</a> </button>
                     </div>
@@ -184,50 +184,81 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-section">
                 <h3>Address</h3>
                 <p>first floor amrith era- 135(1) <br> behind hotel horizon thycaud <br> p.o. trivandrum pin- 695014</p>
                 <h3>Contact</h3>
                 <p>8129246099 <br> 8129446099</p>
-
-            </div>
-            <div class="footer-section">
                 <h3>Social Media</h3>
                 <ul class="social-media">
                     <li><a href="https://www.instagram.com/learnbridge_by_nv/?igsh=bHppdDZvbjh0NDhw" target="_blank">Facebook</a></li>
                     <li><a href="https://www.instagram.com/learnbridge_by_nv/?igsh=bHppdDZvbjh0NDhw" target="_blank">Twitter</a></li>
                     <li><a href="https://www.instagram.com/learnbridge_by_nv/?igsh=bHppdDZvbjh0NDhw" target="_blank">Instagram</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
                 <h3>Services</h3>
                 <ul>
                     <li><a href="admissionpage.html">College Admissions</a></li>
                     <li><a href="credittransfer.html">Credit Transfer</a></li>
                     <li><a href="studyabroad.html">Study Abroad</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
                 <h3>About Learn Bridge</h3>
                 <p>Learn Bridge is dedicated to providing high-quality bridge education for players of all levels. Join our community and enhance your skills with expert instructors.</p>
+
             </div>
+            
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Learn Bridge. All Rights Reserved.</p>
         </div>
+    </footer> -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact">
+                <h3>About founder</h3>
+                <img src="learn edge.logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, consectetur iure nostrum sint maiores sit quidem ducimus a repellat aliquid perspiciatis provident quibusdam illo dolor porro culpa, vero dolorum! Omnis?</p>
+                
+            </div>
+            <div class="registration">
+                <h3>Register</h3>
+                <form id="registrationForm" action="#" method="post" >
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone" required>
+                    <button type="submit">Register</button>
+                </form>
+                <div id="popup" class="popup">Registered!</div>
+            </div>
+            <!-- <div class="quick-links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                </ul>
+            </div> -->
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>First floor Amrith Era- 135(1) Behind hotel horizon thycaud
+                    Trivandrum, Kerela, INDIA
+                    pin- 695014</p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8129246099">8129246099</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8129446099">8129446099</a></p>
+                <p><i class="fa-regular fa-envelope"></i><a href="learnsbridgebynv@gmail.com">Email</a></p>
+                <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/learnbridge_by_nv/?igsh=NXFzY29lY3oxZjBs">Instagram</a></p>
+            </div>
+            
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022 MEDIAGOD, All Rights Reserved</p>
+            <p><a href="www.learnbridgebynv.com">learnbridge.com</a></p>
+        </div>
     </footer>
-
 
 
     <!-- Lenis smooth and premium scroll behavior -->
@@ -261,6 +292,23 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+    </script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Clear the form fields
+    event.target.reset();
+
+    // Display the popup
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    // Hide the popup after 3 seconds
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 3000);
+});
     </script>
 </body>
 
