@@ -258,7 +258,7 @@ p {
     
     transition: 0.5s;
     position: relative; */
-    background-color: #ffffff;
+    background-color: #d8fcd1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(24, 43, 30, 0.5);
     max-width: 300px;
@@ -394,7 +394,7 @@ h3 {
 
 .facilities-col-back {
     background-color: rgb(51, 78, 51);
-    color:#f0f0f0;
+    color:#d8fcd1;
     transform: rotateY(180deg);
     box-sizing: border-box;
     display: flex;
@@ -434,7 +434,7 @@ h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #d8fcd1;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -1819,3 +1819,8 @@ footer {
         width: 100%;
     }
 } */
+
+.servicerow h2 a{
+    text-decoration: none;
+    color: #000;
+}
